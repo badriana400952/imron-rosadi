@@ -11022,26 +11022,20 @@ h5,
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2rem;
+  font-size: 30px;
   color: white;
-  animation: bounce 2s infinite;
   z-index: 10;
-  text-decoration: none;
+  animation: bounceDown 2s infinite;
+  opacity: 0.8;
 }
 
-@keyframes bounce {
+@keyframes bounceDown {
   0%,
   100% {
     transform: translate(-50%, 0);
   }
   50% {
-    transform: translate(-50%, -10px);
-  }
-}
-
-@media (min-width: 768px) {
-  .scroll-down {
-    display: none !important;
+    transform: translate(-50%, 10px);
   }
 }
 
