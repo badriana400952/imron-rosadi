@@ -11016,6 +11016,35 @@ h5,
   position: relative;
   z-index: 0;
 }
+
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: white;
+  animation: bounce 2s infinite;
+  z-index: 10;
+  text-decoration: none;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -10px);
+  }
+}
+
+@media (min-width: 768px) {
+  .scroll-down {
+    display: none !important;
+  }
+}
+
 @media (max-width: 1199.98px) {
   .owl-carousel.home-slider .slider-item {
     background-position: center center !important;
@@ -11058,19 +11087,6 @@ h5,
   opacity: 1;
   border-right: 10px solid rgba(0, 0, 0, 0.1);
 }
-@media (max-width: 767.98px) {
-  .owl-carousel.home-slider,
-  .owl-carousel.home-slider .slider-item,
-  .owl-carousel.home-slider .slider-item .slider-text,
-  .owl-carousel.home-slider .slider-item .slider-text .one-third {
-    height: 100vh !important;
-  }
-
-  .owl-carousel.home-slider .slider-item .slider-text .one-third {
-    z-index: 0 !important; /* jangan -1, bisa menutupi */
-  }
-}
-
 @media (max-width: 991.98px) {
   .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay,
   .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay-1 {
