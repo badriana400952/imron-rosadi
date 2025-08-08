@@ -10856,10 +10856,50 @@ h5,
 #mobile-home {
   display: none;
 }
+@media screen and (max-width: 768px) {
+  #mobile-home {
+    display: block;
+  }
+}
+.profils {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .profils {
+    display: block;
+  }
+}
 
+.jabatan-amanah {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .jabatan-amanah {
+    display: block;
+  }
+}
+.berita-mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .berita-mobile {
+    display: block;
+  }
+}
+.barcode-section {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .barcode-section {
+    display: block;
+  }
+}
 @media screen and (max-width: 768px) {
   /* Sembunyikan versi lama di mobile */
   #home-section {
+    display: none;
+  }
+  #about-section {
     display: none;
   }
 
@@ -11301,28 +11341,6 @@ h5,
   z-index: 0;
 }
 
-.scroll-down {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 30px;
-  color: white;
-  z-index: 10;
-  animation: bounceDown 2s infinite;
-  opacity: 0.8;
-}
-
-@keyframes bounceDown {
-  0%,
-  100% {
-    transform: translate(-50%, 0);
-  }
-  50% {
-    transform: translate(-50%, 10px);
-  }
-}
-
 @media (max-width: 1199.98px) {
   .owl-carousel.home-slider .slider-item {
     background-position: center center !important;
@@ -11606,6 +11624,7 @@ h5,
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .hero-wrap .overlay {
   position: absolute;
   top: 0;
@@ -12234,6 +12253,7 @@ textarea.form-control {
 .ftco-section {
   padding: 7em 0;
   position: relative;
+  background-color: white;
 }
 @media (max-width: 767.98px) {
   .ftco-section {
@@ -12419,6 +12439,7 @@ textarea.form-control {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-position: 20px;
 }
 
 .image-popup {
