@@ -10850,6 +10850,290 @@ h5,
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   padding: 0 15px;
 }
+
+/* barrii xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* Sembunyikan versi mobile di desktop */
+#mobile-home {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* Sembunyikan versi lama di mobile */
+  #home-section {
+    display: none;
+  }
+
+  /* Versi mobile */
+  #mobile-home {
+    display: block;
+    background-color: #f5f0e6; /* krem */
+    min-height: fit-content;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* Header */
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 10px;
+  }
+
+  .mobile-header .logo-dprd {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .mobile-header .header-text h1 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #222;
+    font-weight: 600;
+  }
+
+  .mobile-header .header-text p {
+    font-size: 0.85rem;
+    margin: 3px 0 0;
+    color: #555;
+  }
+
+  /* Container untuk menu + foto */
+  .mc {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* Menu */
+  .mobile-menu {
+    flex: 1;
+    max-width: 160px;
+    text-align: left;
+  }
+
+  .mobile-menu h5 {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    color: #444;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 4px;
+    font-weight: 500;
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile-menu ul li {
+    margin: 3px 0;
+  }
+
+  .mobile-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.78rem;
+    padding: 6px 8px;
+    display: block;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .mobile-menu ul li a:hover {
+    background: rgba(0, 0, 0, 0.05);
+    padding-left: 12px;
+  }
+
+  /* Foto profil */
+  .mobile-profile {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .foto-profil {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Footer text */
+  .mobile-footer-text {
+    font-size: 0.85rem;
+    color: #333;
+    margin-top: 25px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 4px;
+    background-color: white;
+  }
+  /* profil singkat */
+  .profils {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    /* border-radius: 8px; */
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .datadiri {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px 12px;
+    font-size: 13px;
+    /* background-color: #f5f0e6; */
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .datadiri p {
+    margin: 4px 0;
+  }
+
+  .datadiri a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .datadiri a:hover {
+    text-decoration: underline;
+  }
+  #ftco-navbar {
+    display: none !important;
+  }
+
+  .jabatan-amanah {
+    background-color: #fff;
+    padding: 15px;
+    margin: 20px 0;
+    margin-top: 25px;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+    font-family: sans-serif;
+  }
+  .amanah-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+  }
+  .jabatan-amanah h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #333;
+    text-align: center;
+  }
+
+  .jabatan-amanah ol {
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .jabatan-amanah ol li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    color: #444;
+  }
+  .berita-mobile {
+    padding: 8px;
+    /* background-color: #f5f0e6; */
+  }
+
+  .berita-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 10px;
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .berita-text {
+    flex: 1;
+  }
+
+  .berita-text h4 {
+    font-size: 14px;
+    margin: 0 0 4px;
+    color: #555;
+  }
+
+  .berita-text p {
+    font-size: 12px;
+    color: #555;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .berita-foto {
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .berita-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .barcode-section {
+    background-color: #f5f0e6;
+    padding: 20px 0;
+  }
+
+  .barcode-section .subheading {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+  }
+
+  .barcode-section p {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+
+  .qr-box {
+    display: inline-block;
+    padding: 10px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .qr-box img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+  }
+  /* profil singkat */
+}
+
+/* barrii xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
 @media (max-width: 991.98px) {
   .ftco-navbar-light.scrolled .nav-item > .nav-link {
     padding-left: 0 !important;
