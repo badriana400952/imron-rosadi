@@ -1568,6 +1568,18 @@
     </div>
   </footer>
 
+  <!-- Audio -->
+<audio id="bg-music" autoplay loop>
+  <source src="videos/lagu.mpeg" type="audio/mpeg">
+  Browser Anda tidak mendukung pemutar audio.
+</audio>
+
+<!-- Tombol toggle audio -->
+<button id="audio-toggle" class="audio-btn">
+  🔊
+</button>
+
+
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen">
     <svg class="circular" width="48px" height="48px">
@@ -1577,7 +1589,27 @@
     </svg>
   </div>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<script>
+  const audio = document.getElementById("bg-music");
+  const toggleBtn = document.getElementById("audio-toggle");
 
+  // Toggle audio on/off
+  toggleBtn.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.play();
+      toggleBtn.textContent = "🔊"; // icon suara nyala
+    } else {
+      audio.pause();
+      toggleBtn.textContent = "🔇"; // icon suara mati
+    }
+  });
+
+  // Matikan audio saat halaman ditutup
+  window.addEventListener("beforeunload", () => {
+    audio.pause();
+    audio.currentTime = 0;
+  });
+</script>
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
     (function () {
